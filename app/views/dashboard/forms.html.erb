@@ -1,0 +1,35 @@
+<body class="demo-theme-dashboard" onload="settings()">
+
+    <div class="container">
+
+      <nav>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="./index.html">Pageviews</a></li>
+          <li role="presentation"><a href="./clicks.html">Clicks</a></li>
+          <li role="presentation" class="active"><a href="./forms.html">Forms</a></li>
+        </ul>
+      </nav>
+
+      <h3 id="timeframe"></h3>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-8">
+          <div class="forms-interval"></div>
+        </div>
+        <div class="keen-ui-col-4">
+          <div class="total-forms"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="keen-ui-col-8">
+          <div class="forms-by-id-interval"></div>
+        </div>
+        <div class="keen-ui-col-4">
+          <div class="forms-by-id"></div>
+        </div>
+      </div>
+
+    </div>
+    </body>
+<%= javascript_include_tag "forms" %>

@@ -1,0 +1,65 @@
+
+  <body class="demo-theme-dashboard" onload="settings()">
+
+    <div class="container">
+
+
+      <nav>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="./index.html">Pageviews</a></li>
+          <li role="presentation"><a href="./clicks.html">Clicks</a></li>
+          <li role="presentation"><a href="./forms.html">Forms</a></li>
+          <li role="presentation"><a href="./behavior.html">User Behavior</a></li>
+        </ul>
+      </nav>
+
+      <h3 id="timeframe"></h3>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-8">
+          <div class="pageviews-interval"></div>
+        </div>
+        <div class="keen-ui-col-4">
+          <div class="total-pageviews"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-8">
+          <div class="pageviews-by-referrer"></div>
+        </div>
+        <div class="keen-ui-col-4">
+          <div class="unique-pageviews"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-6">
+          <div class="pageviews-by-day"></div>
+        </div>
+        <div class="keen-ui-col-6">
+          <div class="popular-pages-visited"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-6">
+          <div class="pageviews-by-browser"></div>
+        </div>
+        <div class="keen-ui-col-6">
+          <div class="pageviews-by-device"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="keen-ui-col-6">
+          <div class="pageviews-by-country"></div>
+        </div>
+        <div class="keen-ui-col-6">
+          <div class="pageviews-by-city"></div>
+        </div>
+      </div>
+
+    </div>
+    </body>
+<%= javascript_include_tag "index" %>

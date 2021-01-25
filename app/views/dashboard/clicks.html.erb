@@ -1,0 +1,61 @@
+    <body class="demo-theme-dashboard" onload="settings()">
+    <div class="container">
+
+      <nav>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="./index.html">Pageviews</a></li>
+          <li role="presentation" class="active"><a href="./clicks.html">Clicks</a></li>
+          <li role="presentation"><a href="./forms.html">Forms</a></li>
+        </ul>
+      </nav>
+
+      <h3 id="timeframe"></h3>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-8">
+          <div class="clicks-interval"></div>
+        </div>
+        <div class="keen-ui-col-4">
+          <div class="total-clicks"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-8">
+          <div class="clicks-by-referrer"></div>
+        </div>
+        <div class="keen-ui-col-4">
+          <div class="unique-clicks"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-12">
+          <div class="popular-links-clicked"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-6">
+          <div class="clicks-by-day"></div>
+        </div>
+        <div class="keen-ui-col-6">
+          <div class="engagement-funnel"></div>
+        </div>
+      </div>
+
+      <div class="keen-ui-row">
+        <div class="keen-ui-col-6">
+          <div class="clicks-by-browser"></div>
+        </div>
+        <div class="keen-ui-col-6">
+          <div class="clicks-by-device"></div>
+        </div>
+      </div>
+
+    </div>
+    </body>
+
+    <%= javascript_include_tag "clicks" %>
+
+
