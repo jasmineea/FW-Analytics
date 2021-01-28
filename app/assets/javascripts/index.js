@@ -57,22 +57,20 @@ window.renderCharts = function(client, timeframe) {
       .el('.pageviews-by-referrer')
       .height(300)
       .type('table')
-      .title('Pageviews by Referrer')
+      .title('Pageviews From Google')
       .render();
 
     client
       .query('count', {
         event_collection: 'pageviews',
-        timeframe: 'previous_1_months',
+        timeframe: 'this_1_months',
         filters: [
         {
-            "operator": "ne",
-            "property_name": "referrer.info.domain",
-            "property_value": null
-        }],
-        group_by: [
-        "referrer.info.domain"],
-        timezone: 'UTC'
+            "operator": "contains",
+            "property_type": "String",
+            "property_value": "google",
+            "property_name": "referrer.info.domain"
+        }]
       })
       .then(function(res){
         // Handle the result

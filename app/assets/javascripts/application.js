@@ -26,6 +26,8 @@ window.settings = function() {
     // See the Keen API docs for more relative timeframes: https://keen.io/docs/api/#relative-timeframes
     var timeframe = "this_4_weeks";
   
+
+  
     // This is the projectId and readKey for an example project
     // Replace both with your own projectId and readKey to visualize data from your own Auto-Collector project
     window.renderCharts(

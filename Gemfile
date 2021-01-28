@@ -5,6 +5,7 @@ ruby '2.6.5'
 gem 'keen'
 gem 'bootstrap', '~> 5.0.0.beta1'
 gem 'jquery-rails'
+gem 'figaro'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

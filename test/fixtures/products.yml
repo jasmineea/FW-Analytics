@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  order_number: 1
+  order_created: 2021-01-27 10:21:37
+  total: 1
+  billing_address_first_name: MyString
+  billing_address_last_name: MyString
+  customer_ip: 
+  referring_site: MyString
+
+two:
+  order_id: 1
+  order_number: 1
+  order_created: 2021-01-27 10:21:37
+  total: 1
+  billing_address_first_name: MyString
+  billing_address_last_name: MyString
+  customer_ip: 
+  referring_site: MyString
